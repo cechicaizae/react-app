@@ -1,11 +1,21 @@
-import { createContext, PropsWithChildren, useContext } from "react";
+import { createContext, PropsWithChildren, useContext, useState } from "react";
+
+enum StateTest {
+    'cheking',
+    'login',
+    'closed',
+    'authenticated'
+}
 
 export const AuthContext = createContext({})
 
 export const useAuthContext = () => useContext(AuthContext)
 
 export const AuthProvider = ({ children }: PropsWithChildren) => {
-    return (<AuthContext.Provider value={{}}>
+    const [state, setState] = useState(StateTest.cheking)
+    return (<AuthContext.Provider value={{
+        state: state
+    }}>
         {children}
     </AuthContext.Provider>)
 }   

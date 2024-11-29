@@ -1,5 +1,6 @@
 import './App.css'
-import Counter from './components/Counter'
+//import Counter from './components/Counter'
+import LoginPage from './components/LoginPage'
 import { AuthProvider } from './context/AuthContext'
 // import BasicFunctions from './typescript/BasicFunctions'
 //import ObjectLiterals from './typescript/ObjectLiterals'
@@ -16,6 +17,7 @@ function App() {
         {/* <BasicFunctions /> */}
         {/*<BasicTypes />*/}
         {/* <Counter /> */}
+        <LoginPage />
       </div>
     </AuthProvider>
   )
