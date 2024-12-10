@@ -24,5 +24,7 @@ export default function ObjectLiterals() {
       <h3>OBJETO</h3>
       {JSON.stringify(person, null, 2)}
     </>
+
+    
   );
 }
