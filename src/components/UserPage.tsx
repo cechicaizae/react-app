@@ -5,7 +5,7 @@ export default function UserPage() {
     const { users } = useUsers()
     return (
         <>
-            <h3>Usuarios</h3>
+            <h3>Users</h3>
             <table>
                 <thead>
                     <tr>
